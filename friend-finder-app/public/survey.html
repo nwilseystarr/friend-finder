@@ -7,33 +7,19 @@
   <meta charset="UTF-8">
   <title>FriendFinder</title>
 
-  <!-- Latest compiled and minified CSS & JS -->
+  <!-- Bootstrap Stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- J Query -->
   <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-  <!-- Font Awesome Glyphicons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
-  <!-- Chosen -->
+  <!-- Chosen Stylesheet and JS for Select Boxes-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-
-
-
-  <!-- Latest compiled and minified CSS & JS -->
-
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
-  
-
-  <!-- Font Awesome Glyphicons -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> -->
-
-  <!-- Chosen -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script> -->
 
 </head>
 
@@ -44,7 +30,7 @@
     <h2>Survey Questions</h2>
     <hr>
 
-    <h3><strong>About You</strong></h3>
+    <h3><strong>Your Information</strong></h3>
     <h4>Name (Required)</h4>
     <input type="text" id="name" class="form-control" required>
 
@@ -179,7 +165,7 @@
     <hr>
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/nwilseystarr/friend-finder">GitHub
+        <p><a href="/api/friends" target="_blank">API Friends List</a> | <a href="https://github.com/nwilseystarr/friend-finder" target="_blank">GitHub
             Repo</a></p>
       </div>
     </footer>
@@ -194,11 +180,11 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h2 class="modal-title"><strong>Best Match</strong></h2>
+          <h2 class="modal-title"><strong> Your new BFF</strong></h2>
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
-          <img id="match-img" src="https://imgur.com/nOo4Zb0" alt="">
+          <img id="match-img" src="https://i.imgur.com/nOo4Zb0.jpg?1" alt="">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -244,7 +230,6 @@
         });
 
         $(".chosen-select").each(function () {
-
           if ($(this).val() === "") {
             isValid = false;
           }
@@ -285,7 +270,7 @@
 
         });
       } else {
-        alert("Please fill out all fields before submitting!");
+        alert("Please fill out all fields before clicking submit!");
       }
     });
   </script>
