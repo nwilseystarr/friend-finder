@@ -2,7 +2,7 @@
 var friendsArr = [
     {
         "name": "Ahmed",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://imgur.com/nOo4Zb0",
         "scores": [
             5,
             1,
@@ -15,7 +15,24 @@ var friendsArr = [
             4,
             1
         ]
+    },
+    {
+        "name": "Harry Potter",
+        "photo": "https://timedotcom.files.wordpress.com/2014/07/301386_full1.jpg",
+        "scores": [
+            3,
+            2,
+            4,
+            5,
+            5,
+            3,
+            1,
+            4,
+            1,
+            5
+        ]
     }
+
 ];
 
 module.exports = friendsArr;
